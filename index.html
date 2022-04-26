@@ -21,6 +21,7 @@
         document.getElementById("demo2").style.fontSize = "large";
         document.getElementById("h4a").style.fontSize = "large";
         document.getElementById("h4a2").style.fontSize = "large";
+        document.getElementById("final").style.fontSize = "large";
      
     }
 
@@ -29,6 +30,7 @@
         document.getElementById("demo2").style.fontSize = "xx-large";
         document.getElementById("h4a").style.fontSize = "xx-large";
         document.getElementById("h4a2").style.fontSize = "xx-large";
+        document.getElementById("final").style.fontSize = "xx-large";
     }
     
      
@@ -130,8 +132,35 @@
             </div> 
            </div>   
         </div>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
+        </body> <!-- Fim do corpo da página -->
        
-       
-       
+        <h1>Documentação:</h1>
+        <p id="final">
+      Para fazer a ferramenta de aumento da fonte foi usado a propriedade fontSize <br>
+       <br>
+       1- No html criamos dois botões, um escrito A+ (para aumentar a letra) e outro escrito A- (para diminuir) - para isso usamos a propriedade button 
+        <br>
+        2- No css ajustamos os botões para ficar do tamanho que queremos usamos width e height 
+        <br>
+      3- Ainda no css botamos a propriedade position: fixed e a propriedade left: 90% e left: 95% para fixar no canto superior esquerdo da tela 
+        <br>
+       4- No javascript usamos a propriedade document.getElementById("demo").style.fontSize = "x-large" 
+        <br>
+       5- Voltando ao css botamos no botão de aumentar a letra a propriedade onclick="sizesuperlarge()” e no de diminuir a letra a propriedade onclick="sizeLarge()"  
+       <br>
+        Obs: os valores da propriedade left podem ser mudados a vontade, também podendo ser usado com a propriedade right 
+        <br>
+            Obs2: os valores da propriedade onclick podem ser mudados a vontade de acordo com o tamanho de letra desejado 
 
 </body>
